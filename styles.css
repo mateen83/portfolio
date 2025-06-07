@@ -268,7 +268,9 @@ header {
     transition: 0.3s;
   }
 }
-
+.nav__menu{
+  padding: 0px !important;
+}
 .nav__list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -968,8 +970,11 @@ header {
 /*==================== MEDIA QUERIES ====================*/
 
 /* For small devices */
+ @media screen and (max-width: 450px) { .services__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }}
 
-@media screen and (max-width: 350px) {
   .loader {
     font-size: 11vh;
   }
@@ -992,10 +997,7 @@ header {
   .qualification__data {
     gap: 0.5rem;
   }
-  .services__container {
-    grid-template-columns: max-content;
-    justify-content: center;
-  }
+
   .services__content {
     padding-right: 3.5rem;
   }
@@ -1005,8 +1007,10 @@ header {
   .project__img {
     width: 200px;
   }
-}
 
+.about__image{
+border-radius: 15px;
+}
 @media screen and (min-width: 351px) {
   .loader {
     font-size: 13vh;

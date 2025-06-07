@@ -189,7 +189,21 @@ img {
 }
 
 /*==================== LAYOUT ====================*/
+.portfolio__data{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
+}
+@media (max-width: 768px) {
+ .swiper-container-horizontal > .swiper-pagination-bullets{
+  transform: translatey(55px);
+  }
+}
+.portfolio__data p{
+  text-align: center;
+}
 .container {
   max-width: 968px;
   margin-left: var(--mb-1-5);
